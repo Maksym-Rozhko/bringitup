@@ -1,9 +1,13 @@
 .hide {
-    display: none;
+    display: none !important;
 }
 
 .show {
-    display: block;
+    display: block !important;
+}
+
+.show-flex {
+    display: flex !important;
 }
 
 .page > div {
