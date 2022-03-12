@@ -1,8 +1,12 @@
 export default class Slider  {
-    constructor({ pageSelector = '', btnsSelector = '', next = '', prev = '', animation = 'fadeIn' } = {}) {
-        this.page = document.querySelector(pageSelector);
-        this.slides = this.page.children;
-        this.btns = document.querySelectorAll(btnsSelector);
+    constructor({ container = null, btns = null, next = null, prev = null, activeClass = '', animation, autoplay } = {}) {
+        this.container = document.querySelector(container);
+        this.slides = this.container.children;
+        this.btns = document.querySelectorAll(btns);
+        this.prev = document.querySelector(next);
+        this.next = document.querySelector(prev);
+        this.activeClass = activeClass;
+        this.autoplay = autoplay;
         this.slideIndex = 1;
         this.animation = animation;
     };

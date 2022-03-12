@@ -13,3 +13,15 @@
 .page > div {
     overflow: hidden;
 }
+
+.feed__slider-control {
+    position: absolute;
+}
+
+.feed__slider-control .slick-prev {
+    left: 720px;
+}
+
+.feed__slider-control .slick-next {
+    left: 780px;
+}

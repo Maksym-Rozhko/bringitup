@@ -1,8 +1,8 @@
 import Slider from './slider';
 
 export default class MainSlider extends Slider {
-    constructor(pageSelector, btnsSelector, animation) {
-        super(pageSelector, btnsSelector, animation);
+    constructor(btns, animation) {
+        super(btns, animation);
     }
 
     showSlides(n) {
