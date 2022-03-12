@@ -6,9 +6,18 @@ import Form from "./modules/forms";
 
 window.addEventListener('DOMContentLoaded', () => {
     const mainSlider = new MainSlider({
-        container: '.page', btns: '.next', animation: 'slideInUp'
+        container: '.page', 
+        btns: '.next', 
+        animation: 'slideInUp'
     });
     mainSlider.render();
+
+    const moduleMainSlider = new MainSlider({
+        container: '.moduleapp',
+        btns: '.next', 
+        animation: 'fadeIn'
+    });
+    moduleMainSlider.render();
 
     const showUpSlider = new MiniSlider({
         container: '.showup__content-slider',
