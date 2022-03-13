@@ -17,15 +17,17 @@ export default class MainSlider extends Slider {
         };
 
         try {
-            if (n === 3) {
+            if (this.hansonBlock) {
+                if (n === 3) {
                 
-                setTimeout(() => {
-                    this.hansonBlock.classList.remove('hide');
-                    this.hansonBlock.classList.add('fadeInUp');
-                }, 3000);
-            } else {
-                this.hansonBlock.classList.add('hide');
-                this.hansonBlock.classList.remove('fadeInUp');
+                    setTimeout(() => {
+                        this.hansonBlock.classList.remove('hide');
+                        this.hansonBlock.classList.add('fadeInUp');
+                    }, 3000);
+                } else {
+                    this.hansonBlock.classList.add('hide');
+                    this.hansonBlock.classList.remove('fadeInUp');
+                }
             }
         } catch (error) {}
 

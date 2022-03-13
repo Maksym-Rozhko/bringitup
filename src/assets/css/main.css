@@ -25,3 +25,8 @@
 .feed__slider-control .slick-next {
     left: 780px;
 }
+
+.module__info-show .plus-rotate {
+    transform: translateY(2px) rotate(45deg);
+    transition: all ease-in-out .4s;
+}
